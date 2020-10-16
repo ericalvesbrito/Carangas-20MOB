@@ -14,6 +14,7 @@
 		226D3DF025390DD100EB8E9B /* CarTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226D3DEF25390DD100EB8E9B /* CarTableViewCell.swift */; };
 		226D3DF225390E3E00EB8E9B /* CarCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226D3DF125390E3E00EB8E9B /* CarCellViewModel.swift */; };
 		226D3DF4253912EE00EB8E9B /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226D3DF3253912EE00EB8E9B /* Alert.swift */; };
+		226D3DF62539179800EB8E9B /* CarVisualizationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226D3DF52539179800EB8E9B /* CarVisualizationViewModel.swift */; };
 		2297F6162523ECEE00F89427 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2297F6152523ECEE00F89427 /* Car.swift */; };
 		2297F6182523EDE800F89427 /* CarAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2297F6172523EDE800F89427 /* CarAPI.swift */; };
 		A16BA8671F953B940045AD32 /* AddEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16BA8661F953B940045AD32 /* AddEditViewController.swift */; };
@@ -33,6 +34,7 @@
 		226D3DEF25390DD100EB8E9B /* CarTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarTableViewCell.swift; sourceTree = "<group>"; };
 		226D3DF125390E3E00EB8E9B /* CarCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarCellViewModel.swift; sourceTree = "<group>"; };
 		226D3DF3253912EE00EB8E9B /* Alert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		226D3DF52539179800EB8E9B /* CarVisualizationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarVisualizationViewModel.swift; sourceTree = "<group>"; };
 		2297F6152523ECEE00F89427 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		2297F6172523EDE800F89427 /* CarAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarAPI.swift; sourceTree = "<group>"; };
 		A16BA8661F953B940045AD32 /* AddEditViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEditViewController.swift; sourceTree = "<group>"; };
@@ -86,6 +88,7 @@
 		226D3DE42539070F00EB8E9B /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				226D3DF52539179800EB8E9B /* CarVisualizationViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -318,6 +321,7 @@
 				A16BA8671F953B940045AD32 /* AddEditViewController.swift in Sources */,
 				226D3DEE2539097A00EB8E9B /* CarsListingViewModel.swift in Sources */,
 				226D3DF4253912EE00EB8E9B /* Alert.swift in Sources */,
+				226D3DF62539179800EB8E9B /* CarVisualizationViewModel.swift in Sources */,
 				A19C4BE21F92C57D00A25342 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
