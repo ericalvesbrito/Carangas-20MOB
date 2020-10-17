@@ -17,12 +17,16 @@
 		226D3DF62539179800EB8E9B /* CarVisualizationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226D3DF52539179800EB8E9B /* CarVisualizationViewModel.swift */; };
 		226D3DF825391F5A00EB8E9B /* Formatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226D3DF725391F5A00EB8E9B /* Formatter.swift */; };
 		226D3DFA2539217B00EB8E9B /* CarFormViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226D3DF92539217B00EB8E9B /* CarFormViewModel.swift */; };
+		226D3DFE253B122F00EB8E9B /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226D3DFD253B122F00EB8E9B /* Coordinator.swift */; };
+		226D3E01253B172D00EB8E9B /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226D3E00253B172D00EB8E9B /* AppCoordinator.swift */; };
+		226D3E04253B19CF00EB8E9B /* CarsListingCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226D3E03253B19CF00EB8E9B /* CarsListingCoordinator.swift */; };
+		226D3E06253B1C6A00EB8E9B /* UIViewController+Instantiate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226D3E05253B1C6A00EB8E9B /* UIViewController+Instantiate.swift */; };
+		226D3E09253B1D9B00EB8E9B /* UIStoryboard+Names.swift in Sources */ = {isa = PBXBuildFile; fileRef = 226D3E08253B1D9B00EB8E9B /* UIStoryboard+Names.swift */; };
 		2297F6162523ECEE00F89427 /* Car.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2297F6152523ECEE00F89427 /* Car.swift */; };
 		2297F6182523EDE800F89427 /* CarAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2297F6172523EDE800F89427 /* CarAPI.swift */; };
 		A16BA8671F953B940045AD32 /* CarFormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A16BA8661F953B940045AD32 /* CarFormViewController.swift */; };
 		A19C4BE21F92C57D00A25342 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19C4BE11F92C57D00A25342 /* AppDelegate.swift */; };
 		A19C4BE41F92C57D00A25342 /* CarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19C4BE31F92C57D00A25342 /* CarViewController.swift */; };
-		A19C4BE71F92C57D00A25342 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A19C4BE51F92C57D00A25342 /* Main.storyboard */; };
 		A19C4BE91F92C57D00A25342 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A19C4BE81F92C57D00A25342 /* Assets.xcassets */; };
 		A19C4BEC1F92C57D00A25342 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A19C4BEA1F92C57D00A25342 /* LaunchScreen.storyboard */; };
 		A19C4BF81F92C99600A25342 /* CarsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A19C4BF71F92C99600A25342 /* CarsTableViewController.swift */; };
@@ -39,13 +43,17 @@
 		226D3DF52539179800EB8E9B /* CarVisualizationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarVisualizationViewModel.swift; sourceTree = "<group>"; };
 		226D3DF725391F5A00EB8E9B /* Formatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatter.swift; sourceTree = "<group>"; };
 		226D3DF92539217B00EB8E9B /* CarFormViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarFormViewModel.swift; sourceTree = "<group>"; };
+		226D3DFD253B122F00EB8E9B /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		226D3E00253B172D00EB8E9B /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		226D3E03253B19CF00EB8E9B /* CarsListingCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarsListingCoordinator.swift; sourceTree = "<group>"; };
+		226D3E05253B1C6A00EB8E9B /* UIViewController+Instantiate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Instantiate.swift"; sourceTree = "<group>"; };
+		226D3E08253B1D9B00EB8E9B /* UIStoryboard+Names.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+Names.swift"; sourceTree = "<group>"; };
 		2297F6152523ECEE00F89427 /* Car.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Car.swift; sourceTree = "<group>"; };
 		2297F6172523EDE800F89427 /* CarAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarAPI.swift; sourceTree = "<group>"; };
 		A16BA8661F953B940045AD32 /* CarFormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarFormViewController.swift; sourceTree = "<group>"; };
 		A19C4BDE1F92C57D00A25342 /* Carangas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Carangas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A19C4BE11F92C57D00A25342 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A19C4BE31F92C57D00A25342 /* CarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CarViewController.swift; sourceTree = "<group>"; };
-		A19C4BE61F92C57D00A25342 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A19C4BE81F92C57D00A25342 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A19C4BEB1F92C57D00A25342 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A19C4BED1F92C57D00A25342 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -113,6 +121,39 @@
 			path = ViewModel;
 			sourceTree = "<group>";
 		};
+		226D3DFB253B120700EB8E9B /* Protocol */ = {
+			isa = PBXGroup;
+			children = (
+				226D3DFD253B122F00EB8E9B /* Coordinator.swift */,
+			);
+			path = Protocol;
+			sourceTree = "<group>";
+		};
+		226D3DFC253B120C00EB8E9B /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				226D3E05253B1C6A00EB8E9B /* UIViewController+Instantiate.swift */,
+				226D3E08253B1D9B00EB8E9B /* UIStoryboard+Names.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		226D3DFF253B171E00EB8E9B /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				226D3E00253B172D00EB8E9B /* AppCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		226D3E02253B19B000EB8E9B /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				226D3E03253B19CF00EB8E9B /* CarsListingCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
 		2297F60A2523E4E300F89427 /* Visualization */ = {
 			isa = PBXGroup;
 			children = (
@@ -134,6 +175,7 @@
 		2297F60C2523E53100F89427 /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				226D3DFF253B171E00EB8E9B /* Coordinator */,
 				2297F60D2523E53600F89427 /* Model */,
 			);
 			path = Main;
@@ -150,6 +192,7 @@
 		2297F60E2523E53B00F89427 /* Listing */ = {
 			isa = PBXGroup;
 			children = (
+				226D3E02253B19B000EB8E9B /* Coordinator */,
 				226D3DE2253906F500EB8E9B /* ViewModel */,
 				226D3DE1253906EC00EB8E9B /* View */,
 				2297F60F2523E54100F89427 /* Controller */,
@@ -196,6 +239,8 @@
 		2297F6132523ECD500F89427 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				226D3DFC253B120C00EB8E9B /* Extension */,
+				226D3DFB253B120700EB8E9B /* Protocol */,
 				2297F6142523ECDE00F89427 /* Model */,
 			);
 			path = Shared;
@@ -231,7 +276,6 @@
 		A19C4BE01F92C57D00A25342 /* Carangas */ = {
 			isa = PBXGroup;
 			children = (
-				A19C4BE51F92C57D00A25342 /* Main.storyboard */,
 				2297F60C2523E53100F89427 /* Main */,
 				2297F60E2523E53B00F89427 /* Listing */,
 				2297F60A2523E4E300F89427 /* Visualization */,
@@ -305,7 +349,6 @@
 				A19C4BEC1F92C57D00A25342 /* LaunchScreen.storyboard in Resources */,
 				226D3DEA253907DD00EB8E9B /* Form.storyboard in Resources */,
 				A19C4BE91F92C57D00A25342 /* Assets.xcassets in Resources */,
-				A19C4BE71F92C57D00A25342 /* Main.storyboard in Resources */,
 				226D3DE82539079600EB8E9B /* Listing.storyboard in Resources */,
 				226D3DEC2539081700EB8E9B /* Visualization.storyboard in Resources */,
 			);
@@ -320,16 +363,21 @@
 			files = (
 				A19C4BF81F92C99600A25342 /* CarsTableViewController.swift in Sources */,
 				2297F6182523EDE800F89427 /* CarAPI.swift in Sources */,
+				226D3E06253B1C6A00EB8E9B /* UIViewController+Instantiate.swift in Sources */,
 				226D3DF025390DD100EB8E9B /* CarTableViewCell.swift in Sources */,
 				A19C4BE41F92C57D00A25342 /* CarViewController.swift in Sources */,
 				226D3DF225390E3E00EB8E9B /* CarCellViewModel.swift in Sources */,
 				2297F6162523ECEE00F89427 /* Car.swift in Sources */,
+				226D3DFE253B122F00EB8E9B /* Coordinator.swift in Sources */,
 				226D3DF825391F5A00EB8E9B /* Formatter.swift in Sources */,
+				226D3E09253B1D9B00EB8E9B /* UIStoryboard+Names.swift in Sources */,
 				A16BA8671F953B940045AD32 /* CarFormViewController.swift in Sources */,
 				226D3DFA2539217B00EB8E9B /* CarFormViewModel.swift in Sources */,
 				226D3DEE2539097A00EB8E9B /* CarsListingViewModel.swift in Sources */,
 				226D3DF4253912EE00EB8E9B /* Alert.swift in Sources */,
+				226D3E01253B172D00EB8E9B /* AppCoordinator.swift in Sources */,
 				226D3DF62539179800EB8E9B /* CarVisualizationViewModel.swift in Sources */,
+				226D3E04253B19CF00EB8E9B /* CarsListingCoordinator.swift in Sources */,
 				A19C4BE21F92C57D00A25342 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,14 +385,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		A19C4BE51F92C57D00A25342 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				A19C4BE61F92C57D00A25342 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		A19C4BEA1F92C57D00A25342 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
