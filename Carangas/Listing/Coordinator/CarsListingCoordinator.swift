@@ -19,14 +19,26 @@ class CarsListingCoordinator: Coordinator {
     }
     
     func start() {
-        let viewController = CarsTableViewController.instantiateFromStoryboard(.listing)
+        let viewController = CarsListingTableViewController.instantiateFromStoryboard(.listing)
         viewController.coordinator = self
         navigationController.pushViewController(viewController, animated: false)
     }
-    
+}
+
+extension CarsListingCoordinator: CarPresenter {
     func showCarWith(viewModel: CarVisualizationViewModel) {
-        let viewController = CarViewController.instantiateFromStoryboard(.visualization)
-        viewController.viewModel = viewModel
-        navigationController.pushViewController(viewController, animated: true)
+        let childCoordinator = CarVisualizationCoordinator(navigationController: navigationController, carVisualizationViewModel: viewModel)
+        childCoordinator.parentCoordinator = self
+        add(childCoordinator: childCoordinator)
+        childCoordinator.start()
+    }
+}
+
+extension CarsListingCoordinator: CarCreator {
+    func createCar(viewModel: CarFormViewModel = CarFormViewModel()) {
+        let childCoordinator = CarFormCoordinator(navigationController: navigationController, carFormViewModel: viewModel)
+        childCoordinator.parentCoordinator = self
+        add(childCoordinator: childCoordinator)
+        childCoordinator.start()
     }
 }

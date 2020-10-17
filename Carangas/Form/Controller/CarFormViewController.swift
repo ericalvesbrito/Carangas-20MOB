@@ -19,6 +19,7 @@ class CarFormViewController: UIViewController {
     
     // MARK: - Properties
     var viewModel: CarFormViewModel?
+    weak var coordinator: CarFormCoordinator?
     
     // MARK: - Super Methods
     override func viewDidLoad() {
@@ -53,6 +54,11 @@ class CarFormViewController: UIViewController {
                 Alert.show(title: "Erro", message: "\(message) \(apiError.errorMessage)", presenter: self)
             }
         }
+    }
+    
+    deinit {
+        print("CarFormViewController -> deinit")
+        coordinator?.childDidFinish(nil)
     }
 }
 

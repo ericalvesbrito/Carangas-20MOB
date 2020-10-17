@@ -7,7 +7,7 @@
 
 import UIKit
 
-class CarViewController: UIViewController {
+class CarVisualizationViewController: UIViewController {
     
     // MARK: - IBOutlets
     @IBOutlet weak var lbBrand: UILabel!
@@ -16,6 +16,7 @@ class CarViewController: UIViewController {
     
     // MARK: - Properties
     var viewModel: CarVisualizationViewModel?
+    weak var coordinator: CarVisualizationCoordinator?
 
     // MARK: - Super Methods
     override func viewWillAppear(_ animated: Bool) {
@@ -28,9 +29,15 @@ class CarViewController: UIViewController {
         }
     }
     
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if let vc = segue.destination as? CarFormViewController {
-            vc.viewModel = viewModel?.getCarFormViewModel()
-        }
+    deinit {
+        print("CarVisualizationViewController -> deinit")
+        coordinator?.childDidFinish(nil)
     }
+    
+    // MARK: - IBActions
+    @IBAction func editCar(_ sender: UIBarButtonItem) {
+        guard let viewModel = viewModel else {return}
+        coordinator?.editCar(viewModel: viewModel.getCarFormViewModel())
+    }
+    
 }
