@@ -31,7 +31,7 @@ class CarVisualizationCoordinator: Coordinator {
         let childCoordinator = CarFormCoordinator(navigationController: navigationController, carFormViewModel: viewModel)
         childCoordinator.parentCoordinator = self
         add(childCoordinator: childCoordinator)
-        childCoordinator.start()
+        childCoordinator.startModally()
     }
     
     func childDidFinish(_ child: Coordinator?) {

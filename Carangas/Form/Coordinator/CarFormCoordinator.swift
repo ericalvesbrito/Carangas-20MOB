@@ -20,6 +20,13 @@ class CarFormCoordinator: Coordinator {
         self.carFormViewModel = carFormViewModel
     }
     
+    func startModally() {
+        let viewController = CarFormViewController.instantiateFromStoryboard(.form)
+        viewController.viewModel = carFormViewModel
+        viewController.coordinator = self
+        navigationController.present(viewController, animated: true, completion: nil)
+    }
+    
     func start() {
         let viewController = CarFormViewController.instantiateFromStoryboard(.form)
         viewController.viewModel = carFormViewModel
