@@ -35,4 +35,16 @@ class CarsListingViewModelTests: XCTestCase {
         XCTAssertEqual(sut.count, expectedResult, "Total de carros diferente do esperado")
     }
 
+    func testFirstCarInfo() {
+        //Given
+        let indexPath = IndexPath(row: 0, section: 0)
+        
+        //When
+        sut.loadCars()
+        let carVisualizationViewModel = sut.getCarVisualizationViewModelFor(indexPath)
+        
+        //Then
+        XCTAssertEqual(carVisualizationViewModel.title, "M3", "Nome do carro errado")
+        XCTAssertEqual(carVisualizationViewModel.brand, "Marca: Acura", "Marca do carro errada")
+    }
 }
